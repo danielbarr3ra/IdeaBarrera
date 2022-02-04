@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/e7dc25ac84.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header class = "headder">
+        <nav>
+            <!--navigation menu remember to change directory-->
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./plans.html">Plans</a></li>
+                <li><a href="./trainers.html">Trainers</a></li>
+                <li><a href="./events.html">Events</a></li>
+                <li><a href="./aboutUs.html">About us</a></li>
+                <li><a href="./contactUs.html">Contact Us</a></li>
+                <li><a href="./locations.html">Locations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class = "topBanner">
+        <h1>Contact Us</h1>
+    </div>
+    <hr>
+    
+    <img src="../img/leftBanner.jpg" alt="" id="LeftImgBanner">
+    
+    <div class = "middleColumn">
+        <h1>Want to join us? Leave your contact information!</h1>
+        <form class = "contactForm">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div>
+                    <label for = "firstName">Name</label>
+                    <input type="text" name="firstNameBackend" id="firstName" placeholder="your first Name" required>    
+                </div>
+                <br>
+                <div>
+                    <label for = "lastName">Last Name</label>
+                    <input type="text" name="lastNameBackend" id="lastName" placeholder="your last name" required>
+                </div>
+                <br>
+                <div>
+                    <label for="phoneNumber">Phone</label>
+                    <input type="number" name="phoneNumberBackend" id="phoneNumber" placeholder="your last name" requiere>
+                </div>
+                <br>
+                <div>
+                    <label for = "sport"> What are you interested in?</label>
+                    <select name="sportBackEnd" id="sport" required>
+                        <option valaue = "PT">Personal Trainer</option>
+                        <option value="gymMemberShip">Join your gym</option>
+                        <option value = "nutrition">Nutrition Plan!</option>
+                        <option value = "joinLeague" display selected>Join your league!</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <button type="submit">Send to Reach your goals!</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <img src="../img/rightBanner.jpeg" alt="" id="RightImgBanner">
+    
+    
+
+
+    <footer>
+        <div class="footer-phone">
+            <i class="fas fa-mobile-alt fa-2x"></i>
+            <p>+1 52 123 4566</p>    
+        </div>
+        <div class="footer-adress">
+            <i class="fas fa-map-signs fa-2x"></i>
+            <p>2752 8th Avenue, Cross Road Section
+                New York, New York 76322</p>
+        </div>
+        <div class = "footer-socialMedia">
+            <p>you can find us in  </p>
+            <i class="fab fa-facebook-square fa-2x"></i>
+            <i class="fab fa-twitter-square fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>
+
+        </div>
+    </footer>
+</body>
+</html>

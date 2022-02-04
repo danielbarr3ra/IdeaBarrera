@@ -1,0 +1,604 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body{
+    background-color: #303030;
+}
+
+.headder{
+    background-color: #303030;
+    position: sticky;
+    padding: 1em;
+}
+.headder nav ul li{
+    display: inline;
+    font-size: large;
+    padding: 0em 3em;
+
+}
+.headder nav ul li a{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*separting the top banner is going to be the same the only thing different will be the title*/
+.topBanner{
+    height: 10rem;
+    background-image: url(../img/gym.jpg);
+    
+    background-position-y: center;
+    background-position: left;  
+    background-attachment: fixed;  
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.topBanner h1{
+
+    font-size: 4rem;
+    color: #d84860;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    font-family: 'Roboto', sans-serif;;
+}
+
+/*Since the home page, coaches, and other pages will use the three column  template I will keep them general*/
+.leftColumn{
+    display: inline-block;
+    background-color: #d81848;
+    height: 45em;
+    width: 30%;
+
+    padding: 1em 1em 1em 1em;
+    margin: 1em 1em 1em 1em;
+    vertical-align: top;
+    overflow: scroll;
+}
+.leftColumn h1{
+    margin-bottom: 1em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    
+}
+
+
+/*These profiles cards come in handy for the coaches pages*/
+.leftColumn .leftColumn-profile{
+    width: 100%;
+    height: 33%;
+    border: solid 3px white;
+    display: block;
+    margin-top: 1em;
+}
+
+.leftColumn .leftColumn-profile .leftColumn-profile-image{ 
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    border: solid white 1px;
+}
+
+.leftColumn .leftColumn-profile .leftColumn-profile-image img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.leftColumn .leftColumn-profile .leftColumn-profile-information{  
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+.leftColumn .leftColumn-profile .leftColumn-profile-information h3{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 2em 0em 0em 0em;
+}
+
+.leftColumn .leftColumn-profile .leftColumn-profile-information p{
+    padding: 1em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+/*There are three kind of event cards so I will keep them with this template*/
+
+.eventCard{
+    width: 100%;
+    height: 200px;
+}
+
+ .eventCard img{
+    width: 50%;
+    height: 80%;
+    display: inline-block;
+    border-radius: 1rem;
+    border: 3px solid;
+}
+.eventCard .information{
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    padding-left: 2rem;
+    font-family: 'Roboto',sans-serif;
+    color: white;
+
+}
+
+.middleColumn .eventCard .information{
+    color: black;
+}
+
+.middleColumn{
+    display: inline-block;
+    background-color: #d8d8d8;
+    height: 45em;
+    width: 30%;
+    
+    padding: 1em ;
+    margin: 1em ;
+    vertical-align: top;
+}
+.middleColumn h1{
+    margin-bottom: 1em;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.middleColumn p{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 1.5rem 2rem 1.5rem;
+}
+
+.middleColumn .middleColumn-Text{
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    padding: 0.25em;
+}
+.middleColumn .middleBanner-Media{
+    padding: 5em 0.25em 0.25em 0.25em;
+}
+.middleColumn .middleBanner-Media iframe{
+    width:100%;
+}
+
+.rightColumn{
+    display: inline-block;
+    background-color: #d81848;
+    height: 45em;
+    width: 30%;
+    
+    padding: 1em ;
+    margin: 1em ;
+    vertical-align: top;
+    overflow: scroll;
+    
+}
+.rightColumn h1{
+    margin-bottom: 1em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    
+}
+
+/*Altough it feels that Im repeating the profile Card I'm keepping them different in case in the future I want the left column to have a different format*/
+
+.rightColumn .rightColumn-profile{
+    width: 100%;
+    height: 33%;
+    border: solid 3px white;
+    display: block;
+    margin-top: 1em;
+}
+
+.rightColumn .rightColumn-profile-image{ 
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    border: solid white 1px;
+}
+
+.rightColumn .rightColumn-profile-image img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.rightColumn .rightColumn-profile-information{  
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+.rightColumn .rightColumn-profile-information h3{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 2em 0em 0em 0em;
+    text-align: center;
+}
+
+.rightColumn  .rightColumn-profile-information p{
+    padding: 1em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*these are for the banner in the columns for the contact form*/
+#RightImgBanner{
+    width: 29rem;
+    height: 46rem;
+    display: inline;
+}
+#LeftImgBanner{
+    width: 29rem;
+    height: 46rem;
+    display: inline;
+}
+
+.contactForm{
+    background-color: #d818488a;
+    border:#303030 solid 3px;
+    border-radius: 3rem;
+    height: 25rem;
+    margin-top: 4rem;
+}
+.contactForm fieldset{
+    color: white;
+    border:0;
+    margin-top: 5rem;
+    padding-left: 1rem;
+}
+
+
+
+.contactForm button{
+    border:solid 3px black;
+}
+
+
+/*These Slider rows will overflow and scroll in case we have multiple plans in the plan page. I decided to only have two examples and not scroll because it looks kinda crowded */ 
+
+.sliderRowTop{
+    background-color: #d81848;
+    height: 20rem;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.sliderRowTop h3{
+    padding-top: 0.5em;
+    font-size: 25px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sliderRowTop .sliderRowTop-planCover{
+    height: 15rem;
+    width: 30%;
+    display: inline-block;
+    
+    margin: 1em 8rem 1em 8rem;
+    padding-top: 1em;
+    background-image: url("../img/endurance2.jpeg");
+    background-size: cover;
+    border-radius: 3rem;
+    
+}
+.sliderRowTop .sliderRowTop-planCover h4{
+    color: black;
+    text-align: center;
+    font-size: large;
+    margin-top: 3rem;
+    background-color: rgba(255,255,255,0.5);
+}
+.sliderRowTop .sliderRowTop-planCover p{
+    color: black;
+    text-align: center;
+    padding-top: 1em;
+    background-color: rgba(255,255,255,0.5);
+    white-space: normal;
+
+
+}
+
+
+.sliderRowMiddle{
+    background-color: #d8d8d8;
+    height: 20rem;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.sliderRowMiddle h3{
+    padding-top: 0.5em;
+    font-size: 25px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+.sliderRowMiddle .sliderRowMiddle-planCover{
+    height: 15em;
+    width: 25%;
+    display: inline-block;
+    border-radius: 3rem;    
+    margin: 1em 3em 1em 3em;
+    padding-top: 1em;
+    background-image: url("../img/strength.jpeg");
+    background-size: cover;   
+
+}
+
+
+.sliderRowMiddle .sliderRowMiddle-planCover h4{
+    color: black;
+    text-align: center;
+    font-size: large;
+    align-self: center;
+    margin-top: 2rem;
+    background-color: rgba(255,255,255,0.5);
+}
+.sliderRowMiddle .sliderRowMiddle-planCover p{
+    color: black;
+    text-align: center;
+    background-color: rgba(255,255,255,0.5);
+    white-space: normal;
+}
+
+
+
+.sliderRowBottom{
+    background-color: #d84860;
+    height: 20rem;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.sliderRowBottom h3{
+    padding-top: 0.5em;
+    font-size: 25px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.sliderRowBottom .sliderRowBottom-planCover{
+    height: 15em;
+    width: 30%;
+    display: inline-block;
+    margin: 1em 8em 1em 8em;
+    padding-top: 1em;
+    background-image: url("../img/weightloss.jpeg");
+    background-size: cover;
+    border-radius: 3rem; 
+}
+.sliderRowBottom .sliderRowBottom-planCover h4{
+    color: white;
+    text-align: center;
+    font-size: large;
+    margin-top: 1rem;
+    background-color: rgba(48, 12, 12, 0.5);
+}
+.sliderRowBottom .sliderRowBottom-planCover p{
+    color: white;
+    text-align: center;
+    padding-top: 1em;
+    background-color: rgba(48, 12, 12, 0.5);
+    white-space: normal;
+}
+
+/*These cards are for coaches specifially*/
+.CoachProfile{
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+   
+}
+
+
+
+.CoachProfile .CoachProfile-Image{
+    width: 60%;
+    height: 40%;
+    
+    margin-left: 4em;
+    
+}
+.CoachProfile .CoachProfile-Image img{
+    width: 100%;
+    height: 100%;
+    border: solid black 3px;
+    border-radius: 3rem;
+}
+
+.CoachProfile .CoachProfile-Experience{
+    margin-top: 1em;
+    margin-left: 1em;
+    width: 90%;
+    background-color: rgba(255,255,255,0.5);
+}
+.CoachProfile .CoachProfile-Experience h1{
+    margin-top: 1em;
+    text-align: center;
+}
+
+.CoachProfile .CoachProfile-Experience li{
+    list-style-position: inside;
+    width: 100%;
+    margin-top: 1em;
+    list-style-type: none;
+    text-align: center;
+}
+
+/*since I might want to reause the tow banner style later one I will keep these*/
+.BiBannerTop{
+    background-color: #303030;
+    height: 35rem;
+}
+.BiBannerTop h1{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-top: 2rem;
+}
+.BiBannerTop .BiBannerTop-Media{
+    width: 20rem;
+    height: 25rem;
+    display: inline-block;
+    margin-left: 6rem;
+}
+.BiBannerTop .BiBannerTop-Media img{
+    width: 100%;
+    height: 100%;
+    border: white solid 3px;
+    border-radius: 3rem;
+}
+.BiBannerTop .BiBannerTop-information{
+    display: inline-block;
+    width: 30rem;
+    margin-left: 15rem;
+    padding-top: 7rem;
+    text-align: center;
+    vertical-align: top;
+}
+.BiBannerTop .BiBannerTop-information p{
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-size: larger
+}
+
+.BiBannerTop-MapCard{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+
+ .BiBannerTop-MapCard img{
+    width: 20rem;
+    height: 15rem;
+    display: inline-block;
+    border-radius: 1rem;
+    border: 3px solid white;
+}
+.BiBannerTop-MapCard .information{
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    padding-left: 2rem;
+    font-family: 'Roboto',sans-serif;
+    color: wheat;
+    font-size: x-large;
+    padding-top: 3rem
+
+}
+
+
+
+
+
+.BiBannerBottom{
+    background-color: #d84860;
+    height: 35rem;
+}
+.BiBannerBottom h1{
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-top: 2rem;
+}
+.BiBannerBottom .BiBannerBottom-Media{
+    width: 20rem;
+    height: 25rem;
+    
+    display: inline-block;
+    margin-left: 9rem;
+}
+.BiBannerBottom .BiBannerBottom-Media img{
+    width: 100%;
+    height: 100%;
+    border-radius: 3rem;
+    border: black solid 3px;
+}
+.BiBannerBottom .BiBannerBottom-information{
+    display: inline-block;
+    width: 30rem;
+    margin-left: 12rem;
+    padding-top: 7rem;
+    text-align: center;
+    vertical-align: top;
+}
+.BiBannerBottom .BiBannerBottom-information p{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: larger
+}
+
+.BiBannerBottom-MapCard{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+
+ .BiBannerBottom-MapCard img{
+    width: 20rem;
+    height: 15rem;
+    display: inline-block;
+    border-radius: 1rem;
+    border: 3px solid;
+}
+.BiBannerBottom-MapCard .information{
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    padding-left: 2rem;
+    font-family: 'Roboto',sans-serif;
+    color: black;
+    font-size: x-large;
+    padding-top: 3rem
+
+}
+
+
+/*need to add more formating to the footers. I think the image is too much removing it*/
+
+footer{
+    height: 5rem;
+    background-color: #303030;
+}
+footer i{
+    color: white;
+    size: 70rem;
+    padding:0;
+}
+footer p{
+    display: inline;
+    padding: 2em;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: x-large;
+    padding: 0;
+}
+
+footer .footer-phone{
+    padding-top: 1rem;
+    display: inline-block;
+    text-align: center;
+    padding-left: 3rem;
+}
+
+footer .footer-adress{
+    padding-top: 1rem;
+    display: inline-block;
+    text-align: center;
+    padding-left: 3rem;
+}
+
+footer .footer-socialMedia{
+    padding-top: 1rem;
+    display: inline-block;
+    text-align: center;
+    padding-left: 3rem;
+}
