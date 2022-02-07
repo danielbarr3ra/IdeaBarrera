@@ -7,7 +7,7 @@
 .ThreeColumnGrid{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
     grid-template-areas: 
     "header header header header header header" 
     "banner banner banner banner banner banner"
@@ -43,6 +43,24 @@ header nav ul li a{
 
 .GridBanner{
     grid-area: banner;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 8rem;
+    background-image: url(../img/gym.jpg);
+    background-position: 100% 70%;  
+    background-attachment: fixed;  
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.GridBanner h1{
+    font-size: 3rem;
+    margin: 0%;
+    color: #d84860;
+    text-shadow: -2px 0 black;
+    font-family: 'Roboto', sans-serif;;
 }
 .GridColumnLeft{
     grid-area:column1;
