@@ -4,27 +4,65 @@
   box-sizing: border-box;
 }
 
-.body{
-    background-color: #303030;
+.ThreeColumnGrid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "header header header header header header" 
+    "banner banner banner banner banner banner"
+    "column1 column1 column2 column2 column3 column3" 
+    "footer footer footer footer footer footer";
 }
 
-.headder{
+
+
+/*Header will now occupy the header grid and use flex wrap to wrap the menu bar in case it changes to be responsive*/
+header {
+    grid-area: header;
     background-color: #303030;
-    position: sticky;
-    padding: 1em;
 }
-.headder nav ul li{
-    display: inline;
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0.75rem;
+}
+
+header nav ul li{
+    padding: 0.75rem;
+    list-style-type: none;
+}
+
+header nav ul li a{
     font-size: large;
-    padding: 0em 3em;
-
-}
-.headder nav ul li a{
     color: white;
     font-family: 'Roboto', sans-serif;
 }
 
-/*separting the top banner is going to be the same the only thing different will be the title*/
+.GridBanner{
+    grid-area: banner;
+}
+.GridColumnLeft{
+    grid-area:column1;
+}
+.GridColumnMiddle{
+    grid-area:column2;
+}
+.GridColumnRight{
+    grid-area:column3;
+}
+
+.gridFooter{
+    grid-area: footer;
+}
+
+
+
+/**
+
+separting the top banner is going to be the same the only thing different will be the title
 .topBanner{
     height: 10rem;
     background-image: url(../img/gym.jpg);
@@ -43,7 +81,7 @@
     font-family: 'Roboto', sans-serif;;
 }
 
-/*Since the home page, coaches, and other pages will use the three column  template I will keep them general*/
+/*Since the home page, coaches, and other pages will use the three column  template I will keep them general
 .leftColumn{
     display: inline-block;
     background-color: #d81848;
@@ -64,7 +102,7 @@
 }
 
 
-/*These profiles cards come in handy for the coaches pages*/
+/*These profiles cards come in handy for the coaches pages
 .leftColumn .leftColumn-profile{
     width: 100%;
     height: 33%;
@@ -106,7 +144,7 @@
     
 }
 
-/*There are three kind of event cards so I will keep them with this template*/
+/*There are three kind of event cards so I will keep them with this template
 
 .eventCard{
     width: 100%;
@@ -190,7 +228,7 @@
     
 }
 
-/*Altough it feels that Im repeating the profile Card I'm keepping them different in case in the future I want the left column to have a different format*/
+Altough it feels that Im repeating the profile Card I'm keepping them different in case in the future I want the left column to have a different format
 
 .rightColumn .rightColumn-profile{
     width: 100%;
@@ -233,7 +271,7 @@
 }
 
 
-/*these are for the banner in the columns for the contact form*/
+/*these are for the banner in the columns for the contact form
 #RightImgBanner{
     width: 29rem;
     height: 46rem;
@@ -266,8 +304,7 @@
 }
 
 
-/*These Slider rows will overflow and scroll in case we have multiple plans in the plan page. I decided to only have two examples and not scroll because it looks kinda crowded */ 
-
+/*These Slider rows will overflow and scroll in case we have multiple plans in the plan page. I decided to only have two examples and not scroll because it looks kinda crowded 
 .sliderRowTop{
     background-color: #d81848;
     height: 20rem;
@@ -390,7 +427,7 @@
     white-space: normal;
 }
 
-/*These cards are for coaches specifially*/
+/*These cards are for coaches specifially
 .CoachProfile{
     width: 100%;
     height: 100%;
@@ -433,7 +470,7 @@
     text-align: center;
 }
 
-/*since I might want to reause the tow banner style later one I will keep these*/
+/*since I might want to reause the tow banner style later one I will keep these
 .BiBannerTop{
     background-color: #303030;
     height: 35rem;
@@ -562,7 +599,7 @@
 }
 
 
-/*need to add more formating to the footers. I think the image is too much removing it*/
+/*need to add more formating to the footers. I think the image is too much removing it
 
 footer{
     height: 5rem;
@@ -602,3 +639,4 @@ footer .footer-socialMedia{
     text-align: center;
     padding-left: 3rem;
 }
+*/
