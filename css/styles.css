@@ -131,6 +131,40 @@ header nav ul li a{
     text-align: center;
 }
 
+/*Rows for the three grid template*/
+.TopRow{
+    grid-area: row1;
+    background-color: #d81848;
+    display: flex;
+    flex-flow: column wrap;
+}
+.MiddleRow{
+    grid-area: row2;
+    background-color: #303030;
+    display: flex;
+    flex-flow: column wrap;
+}
+.BottomRow{
+    grid-area: row3;
+    background-color: #d81848;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.ThreeRowGrid h3{
+    padding-top: 0.5em;
+    font-size: 25px;
+    color: white;
+    font-family: 'Roboto', sans-serif
+}
+
+.PlanContainer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
 
 /*cards for small horizontal profiles*/
 .HorizontalCard{
@@ -229,7 +263,82 @@ header nav ul li a{
     color: white;
 }
 
+/*plan card, this one is different becausee image has the text in it*/
 
+.endurancePlanCard{
+    height: 15em;
+    width: 30%;
+    display: inline-block;
+    margin: 1em 8em 1em 8em;
+    padding-top: 1em;
+    background-image: url("../img/endurance2.jpeg");
+    background-size: cover;
+    border-radius: 3rem; 
+}
+
+.endurancePlanCard h4{
+    color: white;
+    text-align: center;
+    font-size: large;
+    margin-top: 1rem;
+    background-color: rgba(48, 12, 12, 0.5);
+}
+.endurancePlanCard p{
+    color: white;
+    text-align: center;
+    padding-top: 1em;
+    background-color: rgba(48, 12, 12, 0.5);
+    white-space: normal;
+}
+
+.strengthPlanCard {
+    height: 15em;
+    width: 30%;
+    display: inline-block;
+    margin: 1em 8em 1em 8em;
+    padding-top: 1em;
+    background-image: url("../img/strength.jpeg");
+    background-size: cover;
+    border-radius: 3rem; 
+}
+.strengthPlanCard h4{
+    color: white;
+    text-align: center;
+    font-size: large;
+    margin-top: 1rem;
+    background-color: rgba(48, 12, 12, 0.5);
+}
+.strengthPlanCard p{
+    color: white;
+    text-align: center;
+    padding-top: 1em;
+    background-color: rgba(48, 12, 12, 0.5);
+    white-space: normal;
+}
+.weightPlanCard{
+    height: 15em;
+    width: 30%;
+    display: inline-block;
+    margin: 1em 8em 1em 8em;
+    padding-top: 1em;
+    background-image: url("../img/weightloss.jpeg");
+    background-size: cover;
+    border-radius: 3rem; 
+}
+.weightPlanCard h4{
+    color: white;
+    text-align: center;
+    font-size: large;
+    margin-top: 1rem;
+    background-color: rgba(48, 12, 12, 0.5);
+}
+.weightPlanCard p{
+    color: white;
+    text-align: center;
+    padding-top: 1em;
+    background-color: rgba(48, 12, 12, 0.5);
+    white-space: normal;
+}
 
 footer{
     grid-area: footer;
@@ -285,20 +394,6 @@ footer .footer-socialMedia{
 
 Altough it feels that Im repeating the profile Card I'm keepping them different in case in the future I want the left column to have a different format
 
-.rightColumn .rightColumn-profile{
-    width: 100%;
-    height: 33%;
-    border: solid 3px white;
-    display: block;
-    margin-top: 1em;
-}
-
-.rightColumn .rightColumn-profile-image{ 
-    width: 40%;
-    height: 100%;
-    display: inline-block;
-    border: solid white 1px;
-}
 
 
 /*these are for the banner in the columns for the contact form
@@ -467,38 +562,7 @@ Altough it feels that Im repeating the profile Card I'm keepping them different 
 
 
 
-.CoachProfile .CoachProfile-Image{
-    width: 60%;
-    height: 40%;
-    
-    margin-left: 4em;
-    
-}
-.CoachProfile .CoachProfile-Image img{
-    width: 100%;
-    height: 100%;
-    border: solid black 3px;
-    border-radius: 3rem;
-}
 
-.CoachProfile .CoachProfile-Experience{
-    margin-top: 1em;
-    margin-left: 1em;
-    width: 90%;
-    background-color: rgba(255,255,255,0.5);
-}
-.CoachProfile .CoachProfile-Experience h1{
-    margin-top: 1em;
-    text-align: center;
-}
-
-.CoachProfile .CoachProfile-Experience li{
-    list-style-position: inside;
-    width: 100%;
-    margin-top: 1em;
-    list-style-type: none;
-    text-align: center;
-}
 
 /*since I might want to reause the tow banner style later one I will keep these
 .BiBannerTop{
