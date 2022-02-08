@@ -28,7 +28,16 @@
     "footer footer footer footer footer footer";
 }
 
-
+.TwoRowGrid{ display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+    "header header header header header header" 
+    "banner banner banner banner banner banner"
+    "biRow1 biRow1 biRow1 biRow1 biRow1 biRow1"
+    "biRow2 biRow2 biRow2 biRow2 biRow2 biRow2"
+    "footer footer footer footer footer footer";
+}
 
 /*Header will now occupy the header grid and use flex wrap to wrap the menu bar in case it changes to be responsive*/
 header {
@@ -150,19 +159,44 @@ header nav ul li a{
     display: flex;
     flex-flow: column wrap;
 }
-
 .ThreeRowGrid h3{
     padding-top: 0.5em;
     font-size: 25px;
     color: white;
     font-family: 'Roboto', sans-serif
 }
-
 .PlanContainer{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
+}
+
+.biRowUp{
+    grid-area: biRow1;
+    background-color: #303030;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.biRowUp h1{
+    color: white;
+    padding: 1.5rem;
+    font-family: 'Roboto',sans-serif;
+}
+.biRowDown{
+    grid-area: biRow2;
+    background-color: #d81848;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.biRowDown h1{
+    color: white;
+    padding: 1.5rem;
+    font-family: 'Roboto',sans-serif;
 }
 
 
@@ -191,10 +225,7 @@ header nav ul li a{
     padding: 2em;
     flex-grow: 1
 }
-
-
 /*Big cards For large profiles*/
-
 .VerticalCard{
     padding: 1rem;
     display:flex;
@@ -275,7 +306,6 @@ header nav ul li a{
     background-size: cover;
     border-radius: 3rem; 
 }
-
 .endurancePlanCard h4{
     color: white;
     text-align: center;
@@ -338,6 +368,44 @@ header nav ul li a{
     padding-top: 1em;
     background-color: rgba(48, 12, 12, 0.5);
     white-space: normal;
+}
+
+.largeHorizontalCard{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 1rem;
+}
+.largeHorizontalCard .largeHorizontalCard-Img {
+    width: 20rem;
+}
+.largeHorizontalCard .largeHorizontalCard-Img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 3rem;
+    border: white solid 3px;
+}
+
+.largeHorizontalCard .largeHorizontalCard-Text {
+    width: 30rem;
+}
+
+.largeHorizontalCard .largeHorizontalCard-Text p{
+    font-family: 'Roboto',sans-serif;
+    color: white;
+    font-size: large;
+}
+
+.biRowDown .largeHorizontalCard .largeHorizontalCard-Text p{
+    color: black;
+}
+.biRowDown .largeHorizontalCard .largeHorizontalCard-Img img{
+    border: #303030 solid 3px;
+}
+.biRowDown h1{
+    color: #303030;
 }
 
 footer{
@@ -428,137 +496,6 @@ Altough it feels that Im repeating the profile Card I'm keepping them different 
     border:solid 3px black;
 }
 
-
-/*These Slider rows will overflow and scroll in case we have multiple plans in the plan page. I decided to only have two examples and not scroll because it looks kinda crowded 
-.sliderRowTop{
-    background-color: #d81848;
-    height: 20rem;
-    overflow-x: auto;
-    white-space: nowrap;
-}
-.sliderRowTop h3{
-    padding-top: 0.5em;
-    font-size: 25px;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-}
-
-.sliderRowTop .sliderRowTop-planCover{
-    height: 15rem;
-    width: 30%;
-    display: inline-block;
-    
-    margin: 1em 8rem 1em 8rem;
-    padding-top: 1em;
-    background-image: url("../img/endurance2.jpeg");
-    background-size: cover;
-    border-radius: 3rem;
-    
-}
-.sliderRowTop .sliderRowTop-planCover h4{
-    color: black;
-    text-align: center;
-    font-size: large;
-    margin-top: 3rem;
-    background-color: rgba(255,255,255,0.5);
-}
-.sliderRowTop .sliderRowTop-planCover p{
-    color: black;
-    text-align: center;
-    padding-top: 1em;
-    background-color: rgba(255,255,255,0.5);
-    white-space: normal;
-
-
-}
-
-
-.sliderRowMiddle{
-    background-color: #d8d8d8;
-    height: 20rem;
-    overflow-x: auto;
-    white-space: nowrap;
-}
-.sliderRowMiddle h3{
-    padding-top: 0.5em;
-    font-size: 25px;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-}
-.sliderRowMiddle .sliderRowMiddle-planCover{
-    height: 15em;
-    width: 25%;
-    display: inline-block;
-    border-radius: 3rem;    
-    margin: 1em 3em 1em 3em;
-    padding-top: 1em;
-    background-image: url("../img/strength.jpeg");
-    background-size: cover;   
-
-}
-
-
-.sliderRowMiddle .sliderRowMiddle-planCover h4{
-    color: black;
-    text-align: center;
-    font-size: large;
-    align-self: center;
-    margin-top: 2rem;
-    background-color: rgba(255,255,255,0.5);
-}
-.sliderRowMiddle .sliderRowMiddle-planCover p{
-    color: black;
-    text-align: center;
-    background-color: rgba(255,255,255,0.5);
-    white-space: normal;
-}
-
-
-
-.sliderRowBottom{
-    background-color: #d84860;
-    height: 20rem;
-    overflow-x: auto;
-    white-space: nowrap;
-}
-.sliderRowBottom h3{
-    padding-top: 0.5em;
-    font-size: 25px;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-}
-.sliderRowBottom .sliderRowBottom-planCover{
-    height: 15em;
-    width: 30%;
-    display: inline-block;
-    margin: 1em 8em 1em 8em;
-    padding-top: 1em;
-    background-image: url("../img/weightloss.jpeg");
-    background-size: cover;
-    border-radius: 3rem; 
-}
-.sliderRowBottom .sliderRowBottom-planCover h4{
-    color: white;
-    text-align: center;
-    font-size: large;
-    margin-top: 1rem;
-    background-color: rgba(48, 12, 12, 0.5);
-}
-.sliderRowBottom .sliderRowBottom-planCover p{
-    color: white;
-    text-align: center;
-    padding-top: 1em;
-    background-color: rgba(48, 12, 12, 0.5);
-    white-space: normal;
-}
-
-/*These cards are for coaches specifially
-.CoachProfile{
-    width: 100%;
-    height: 100%;
-    padding: 1em;
-   
-}
 
 
 
