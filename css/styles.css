@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/*grid for index, this will be reused in other pages*/
 .ThreeColumnGrid{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -24,8 +24,7 @@ header {
 }
 header nav ul {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
     padding: 0.75rem;
 }
@@ -40,12 +39,11 @@ header nav ul li a{
     color: white;
     font-family: 'Roboto', sans-serif;
 }
-
+/*Banner almos the same but use flex in tital in case in the future it iwll come in handy*/
 .GridBanner{
     grid-area: banner;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: flex-start;
     align-items: center;
     height: 8rem;
@@ -62,42 +60,130 @@ header nav ul li a{
     text-shadow: -2px 0 black;
     font-family: 'Roboto', sans-serif;;
 }
+
+/*Columns labeled, probably will make it more general in the future*/
 .GridColumnLeft{
     grid-area:column1;
+    display: flex;
+    flex-direction: column;
+    background-color: #d81848
+}
+.GridColumnLeft h1{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 .GridColumnMiddle{
     grid-area:column2;
+    display: flex;
+    flex-direction: column;
+    
+    background-color: #303030
 }
-.GridColumnRight{
-    grid-area:column3;
+.GridColumnMiddle h1{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.GridColumnMiddle .GridColumnMiddle-Text{
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    margin-top: 3rem;
+    padding: 2rem;
+    color: white;
+}
+.GridColumnMiddle .GridColumnMiddle-Media{
+    padding: 5em 0.25em 0.25em 0.25em;
+}
+.GridColumnMiddle .GridColumnMiddle-Media iframe{
+    width:100%;
 }
 
-.gridFooter{
+.GridColumnRight{
+    grid-area:column3;
+    display: flex;
+    flex-direction: column;
+    background-color: #d81848;
+}
+.GridColumnRight h1{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+
+/*cards for profiles*/
+.HorizontalCard{
+    display: flex;
+    flex-flow: row wrap;
+    border: white 3px solid;
+    margin: 1rem;
+}
+.HorizontalCard .HorizontalCard-Img{
+    border: white;
+    width: 150px;
+}
+.HorizontalCard .HorizontalCard-Img img{
+    width: 100%;
+    height: 100%;
+}
+.HorizontalCard .HorizontalCard-Body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    width: 200px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 2em;
+    flex-grow: 1
+}
+
+
+footer{
     grid-area: footer;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: #303030;
+}
+
+footer i{
+    color: white;
+    size: 70rem;
+    padding: 0.1em;;
+}
+footer p{
+    display: inline;
+    padding: 2em;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: x-large;
+    padding: 0;
+}
+
+footer .footer-phone{
+    padding-top: 1rem;
+    text-align: center;
+    padding-left: 3rem;
+}
+
+footer .footer-adress{
+    padding-top: 1rem;
+    
+    text-align: center;
+    padding-left: 3rem;
+}
+
+footer .footer-socialMedia{
+    padding-top: 1rem;
+    
+    text-align: center;
+    padding-left: 3rem;
 }
 
 
 
 /**
-
-separting the top banner is going to be the same the only thing different will be the title
-.topBanner{
-    height: 10rem;
-    background-image: url(../img/gym.jpg);
-    
-    background-position-y: center;
-    background-position: left;  
-    background-attachment: fixed;  
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.topBanner h1{
-
-    font-size: 4rem;
-    color: #d84860;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-    font-family: 'Roboto', sans-serif;;
-}
 
 /*Since the home page, coaches, and other pages will use the three column  template I will keep them general
 .leftColumn{
@@ -616,45 +702,4 @@ Altough it feels that Im repeating the profile Card I'm keepping them different 
 
 }
 
-
-/*need to add more formating to the footers. I think the image is too much removing it
-
-footer{
-    height: 5rem;
-    background-color: #303030;
-}
-footer i{
-    color: white;
-    size: 70rem;
-    padding:0;
-}
-footer p{
-    display: inline;
-    padding: 2em;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-size: x-large;
-    padding: 0;
-}
-
-footer .footer-phone{
-    padding-top: 1rem;
-    display: inline-block;
-    text-align: center;
-    padding-left: 3rem;
-}
-
-footer .footer-adress{
-    padding-top: 1rem;
-    display: inline-block;
-    text-align: center;
-    padding-left: 3rem;
-}
-
-footer .footer-socialMedia{
-    padding-top: 1rem;
-    display: inline-block;
-    text-align: center;
-    padding-left: 3rem;
-}
 */
