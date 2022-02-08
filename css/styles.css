@@ -494,6 +494,115 @@ footer .footer-socialMedia{
     padding-left: 3rem;
 }
 
+/*Adding hhe media query for tablet it should be allmost the same just for a few*/
+@media screen and (max-width: 768px) {
+    .ThreeColumnGrid{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+        "header header header header header header" 
+        "banner banner banner banner banner banner"
+        "column1 column1 column1 column1 column1 column1"
+        "column2 column2 column2 column2 column2 column2"
+        "column3 column3 column3 column3 column3 column3"
+        "footer footer footer footer footer footer";
+    }
+
+    /*the column bsided form should be horizontal immage no*/
+    .GridColumnLeft .GridColumnLeft-Filler{
+        width: 100%;
+        height: 300px;
+        background-image: url("../img/rowBanner.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .GridColumnLeft .GridColumnLeft-Filler img{
+        width: 0%;
+        height: 9%;
+    }
+
+    .GridColumnRight .GridColumnRight-Filler{
+        width: 100%;
+        height: 300px;
+        background-image: url("../img/rowBanner.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .GridColumnRight .GridColumnRight-Filler img{
+        width: 0%;
+        height: 9%;
+    }
+    /*event card imgae too stretched out*/
+    .eventCard .eventCard-Img{
+        width: 40%;
+        height: 80%;
+    }
+    .eventCard img{
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+        border: white 3px solid;
+    }
+    /*the different categori card are too small*/
+    .PlanContainer {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .endurancePlanCard {
+        height: 15em;
+        width: 75%;
+        margin: 1em 8em 1em 8em;
+        padding-top: 1em;
+        background-image: url(../img/endurance2.jpeg);
+        background-size: cover;
+        border-radius: 3rem;
+    }
+    .endurancePlanCard h4{
+        color: white;
+        text-align: center;
+        font-size: large;
+        margin-top: 2rem;
+        background-color: rgba(48, 12, 12, 0.5);
+    }
+    
+    .strengthPlanCard {
+        height: 15em;
+        width: 75%;
+        
+        padding-top: 1em;
+        background-image: url(../img/strength.jpeg);
+        background-size: cover;
+        border-radius: 3rem;
+    }
+    .strengthPlanCard h4{
+        color: white;
+        text-align: center;
+        font-size: large;
+        margin-top: 2rem;
+        background-color: rgba(48, 12, 12, 0.5);
+    }
+    .weightPlanCard {
+        height: 15em;
+        width: 65%;
+        margin: 1em 8em 1em 8em;
+        padding-top: 1em;
+        background-image: url(../img/weightloss.jpeg);
+        background-size: cover;
+        border-radius: 3rem;
+    }
+    .weightPlanCard h4{
+        color: white;
+        text-align: center;
+        font-size: large;
+        margin-top: 2rem;
+        background-color: rgba(48, 12, 12, 0.5);
+    }
+}
+
 /*adding media queries for phone first it seems that I only need to change the grid layout*/
 @media screen and (max-width: 320px){
 
