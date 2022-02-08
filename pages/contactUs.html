@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
 </head>
-<body>
+<body class = "ThreeColumnGrid">
     <header class = "headder">
         <nav>
             <!--navigation menu remember to change directory-->
@@ -29,15 +29,18 @@
     <div class = "GridBanner">
         <h1>Contact Us</h1>
     </div>
-    <hr>
-    
-    <img src="../img/leftBanner.jpg" alt="" id="LeftImgBanner">
-    
-    <div class = "middleColumn">
+
+    <div class="GridColumnLeft">
+        <div class = "GridColumnLeft-Filler">
+            <img src="../img/columnBanner.jpeg" alt="">
+        </div>
+    </div>
+        
+    <div class = "GridColumnMiddle">
         <h1>Want to join us? Leave your contact information!</h1>
         <form class = "contactForm">
             <fieldset>
-                <legend>Contact Information</legend>
+                <legend  align="center">Contact Information</legend>
                 <div>
                     <label for = "firstName">Name</label>
                     <input type="text" name="firstNameBackend" id="firstName" placeholder="your first Name" required>    
@@ -69,10 +72,11 @@
             </fieldset>
         </form>
     </div>
-    <img src="../img/rightBanner.jpeg" alt="" id="RightImgBanner">
-    
-    
-
+    <div class="GridColumnRight">
+        <div class = "GridColumnRight-Filler">
+            <img src="../img/columnBanner.jpeg" alt="">
+        </div>
+    </div>
 
     <footer>
         <div class="footer-phone">
