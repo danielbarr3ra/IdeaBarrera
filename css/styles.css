@@ -371,6 +371,7 @@ header nav ul li a{
 }
 
 .largeHorizontalCard{
+    margin: 1rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -395,11 +396,14 @@ header nav ul li a{
 .largeHorizontalCard .largeHorizontalCard-Text p{
     font-family: 'Roboto',sans-serif;
     color: white;
-    font-size: large;
+    font-size: larger;
 }
 
+/*need to find a better way to reduce all the styliing here*/
 .biRowDown .largeHorizontalCard .largeHorizontalCard-Text p{
     color: black;
+    font-family: 'Roboto',sans-serif;
+    font-size:larger;
 }
 .biRowDown .largeHorizontalCard .largeHorizontalCard-Img img{
     border: #303030 solid 3px;
