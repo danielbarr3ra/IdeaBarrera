@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-/*grid for index, this will be reused in other pages*/
+/*these grids wwill be reused in other pages*/
 .ThreeColumnGrid{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -484,14 +484,60 @@ footer .footer-phone{
 
 footer .footer-adress{
     padding-top: 1rem;
-    
     text-align: center;
     padding-left: 3rem;
 }
 
 footer .footer-socialMedia{
     padding-top: 1rem;
-    
     text-align: center;
     padding-left: 3rem;
+}
+
+/*adding media queries for phone first it seems that I only need to change the grid layout*/
+/*for mobile devices, pages with the three column grid will have to become rows */
+@media screen and (max-width: 320px){
+    .ThreeColumnGrid{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+        "header header header header header header" 
+        "banner banner banner banner banner banner"
+        "column1 column1 column1 column1 column1 column1"
+        "column2 column2 column2 column2 column2 column2"
+        "column3 column3 column3 column3 column3 column3"
+        "footer footer footer footer footer footer";
+    }
+
+
+    footer{
+        grid-area: footer;
+        display: flex;
+        flex-flow: column nowrap;
+        background-color: #303030;
+        text-align: center;
+        justify-content: center;
+    }
+    footer p{
+        display: inline;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        font-size: medium;
+    }
+
+    footer .footer-phone{
+        text-align: center;
+        padding: 0;
+    }
+    
+    footer .footer-adress{
+        text-align: center;
+        padding: 0;
+    }
+    
+    footer .footer-socialMedia{
+        text-align: center;
+        padding: 0;
+    }
 }
