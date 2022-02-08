@@ -341,9 +341,9 @@ header nav ul li a{
 .endurancePlanCard{
     height: 15em;
     width: 30%;
-    display: inline-block;
-    margin: 1em 8em 1em 8em;
-    padding-top: 1em;
+    padding-top: 3em;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     background-image: url("../img/endurance2.jpeg");
     background-size: cover;
     border-radius: 3rem; 
@@ -366,9 +366,9 @@ header nav ul li a{
 .strengthPlanCard {
     height: 15em;
     width: 30%;
-    display: inline-block;
-    margin: 1em 8em 1em 8em;
-    padding-top: 1em;
+    padding-top: 3em;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     background-image: url("../img/strength.jpeg");
     background-size: cover;
     border-radius: 3rem; 
@@ -390,9 +390,9 @@ header nav ul li a{
 .weightPlanCard{
     height: 15em;
     width: 30%;
-    display: inline-block;
-    margin: 1em 8em 1em 8em;
-    padding-top: 1em;
+    padding-top: 2em;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     background-image: url("../img/weightloss.jpeg");
     background-size: cover;
     border-radius: 3rem; 
@@ -495,8 +495,9 @@ footer .footer-socialMedia{
 }
 
 /*adding media queries for phone first it seems that I only need to change the grid layout*/
-/*for mobile devices, pages with the three column grid will have to become rows */
 @media screen and (max-width: 320px){
+
+    /*for mobile devices, pages with the three column grid will have to become rows */
     .ThreeColumnGrid{
         display: grid;
         grid-template-columns: repeat(6, 1fr);
@@ -544,6 +545,64 @@ footer .footer-socialMedia{
         text-align: center;
     }
 
+    /*the different categori card are too small*/
+    .PlanContainer {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .endurancePlanCard {
+        height: 15em;
+        width: 75%;
+        margin: 1em 8em 1em 8em;
+        padding-top: 1em;
+        background-image: url(../img/endurance2.jpeg);
+        background-size: cover;
+        border-radius: 3rem;
+    }
+    .endurancePlanCard h4{
+        color: white;
+        text-align: center;
+        font-size: large;
+        margin-top: 2rem;
+        background-color: rgba(48, 12, 12, 0.5);
+    }
+    
+    .strengthPlanCard {
+        height: 15em;
+        width: 75%;
+        
+        padding-top: 1em;
+        background-image: url(../img/strength.jpeg);
+        background-size: cover;
+        border-radius: 3rem;
+    }
+    .strengthPlanCard h4{
+        color: white;
+        text-align: center;
+        font-size: large;
+        margin-top: 2rem;
+        background-color: rgba(48, 12, 12, 0.5);
+    }
+    .weightPlanCard {
+        height: 15em;
+        width: 65%;
+        margin: 1em 8em 1em 8em;
+        padding-top: 1em;
+        background-image: url(../img/weightloss.jpeg);
+        background-size: cover;
+        border-radius: 3rem;
+    }
+    .weightPlanCard h4{
+        color: white;
+        text-align: center;
+        font-size: large;
+        margin-top: 2rem;
+        background-color: rgba(48, 12, 12, 0.5);
+    }
+    /*smaller and cleanre for mobile*/
     footer{
         grid-area: footer;
         display: flex;
