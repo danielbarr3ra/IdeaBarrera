@@ -136,6 +136,7 @@ header nav ul li a:hover{
   border: white solid 3px;
   border-radius: 3rem;
   padding: 1.5rem;
+  animation: GridColumnMiddle-Text 5s infinite;
 }
 .GridColumnMiddle .GridColumnMiddle-Text {
   font-family: "Roboto", sans-serif;
@@ -143,6 +144,14 @@ header nav ul li a:hover{
   margin-top: 3rem;
   padding: 2rem;
   color: white;
+}
+
+/*adding key frames*/
+@keyframes  GridColumnMiddle-Text {
+  0% {top: 0%;}
+  33% {top: 25%; background: #c9657e;}
+  66% {top: 50%; background: #e03e59;}
+  100% {top: 25%; background: #c9657e;}
 }
 .GridColumnMiddle .GridColumnMiddle-Media {
   padding: 5em 0.25em 0.25em 0.25em;
