@@ -395,6 +395,8 @@ header nav ul li a:hover{
   background-image: url("../img/endurance2.jpeg");
   background-size: cover;
   border-radius: 3rem;
+
+  transition: all 0.2s ease-in-out;
 }
 .endurancePlanCard h4 {
   color: white;
@@ -420,6 +422,8 @@ header nav ul li a:hover{
   background-image: url("../img/strength.jpeg");
   background-size: cover;
   border-radius: 3rem;
+
+  transition: all 0.2s ease-in-out;
 }
 .strengthPlanCard h4 {
   color: white;
@@ -444,6 +448,8 @@ header nav ul li a:hover{
   background-image: url("../img/weightloss.jpeg");
   background-size: cover;
   border-radius: 3rem;
+
+  transition: all 0.2s ease-in-out;
 }
 .weightPlanCard h4 {
   color: white;
@@ -458,6 +464,17 @@ header nav ul li a:hover{
   padding-top: 1em;
   background-color: rgba(48, 12, 12, 0.5);
   white-space: normal;
+}
+
+
+.endurancePlanCard:hover{
+  transform: scale(1.1);
+}
+.weightPlanCard:hover{
+  transform: scale(1.1);
+}
+.strengthPlanCard:hover{
+  transform: scale(1.1);
 }
 
 .largeHorizontalCard {
