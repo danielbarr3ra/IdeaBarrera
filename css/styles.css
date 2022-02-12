@@ -503,22 +503,45 @@ footer p {
   padding: 0;
 }
 
+footer p:hover{
+  color: rgb(255, 78, 78);
+}
+
+footer i:hover{
+  color: rgb(255, 78, 78);
+}
+
 footer .footer-phone {
   padding-top: 1rem;
   text-align: center;
   padding-left: 3rem;
+  transition: all .2s ease-in-out;
+}
+
+footer .footer-phone:hover{
+  transform: scale(1.1);
 }
 
 footer .footer-adress {
   padding-top: 1rem;
   text-align: center;
   padding-left: 3rem;
+  transition: all .2s ease-in-out;
+}
+
+footer .footer-adress:hover{
+  transform: scale(1.1);
 }
 
 footer .footer-socialMedia {
   padding-top: 1rem;
   text-align: center;
   padding-left: 3rem;
+  transition: all .2s ease-in-out;
+}
+
+ footer .footer-socialMedia:hover{
+  transform: scale(1.1);
 }
 
 /*Adding hhe media query for tablet it should be allmost the same just for a few*/
