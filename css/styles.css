@@ -316,6 +316,8 @@ header nav ul li a:hover{
 .VerticalCard .VerticalCard-Img {
   border: #303030;
   width: 300px;
+  
+  transition: all .3s ease-in-out;
 }
 .VerticalCard .VerticalCard-Img img {
   width: 100%;
@@ -333,6 +335,8 @@ header nav ul li a:hover{
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 3rem;
   margin-top: 1rem;
+
+  transition: all .3s ease-in-out;
 }
 
 .VerticalCard .VerticalCard-Body h1 {
@@ -343,6 +347,14 @@ header nav ul li a:hover{
   list-style: none;
 }
 
+.VerticalCard .VerticalCard-Img :hover{
+  transform: scale(1.05);
+}
+
+.VerticalCard .VerticalCard-Body:hover{
+  transform: scale(1.05);
+  color: #303030;
+}
 /*Event cards similar to horizontal might make them the same in the future*/
 .eventCard {
   display: flex;
