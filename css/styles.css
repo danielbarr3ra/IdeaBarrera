@@ -55,12 +55,27 @@ header nav ul {
 header nav ul li {
   padding: 0.75rem;
   list-style-type: none;
+
+  /*adding animation*/
+  transition: all ease-in-out 0.3s;
 }
 
 header nav ul li a {
   font-size: large;
   color: white;
   font-family: "Roboto", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+header nav ul li:hover{
+  background-color: white;
+}
+
+/*note to self if the hover happens in between the margins of  li and a it wont appli the transform of a, I should solve this by either making the margin tighter or also applying the animation there*/
+
+header nav ul li a:hover{
+  color: #303030;
+  font-size: x-large;
 }
 /*Banner almos the same but use flex in tital in case in the future it iwll come in handy*/
 .GridBanner {
@@ -242,12 +257,17 @@ header nav ul li a {
   font-family: "Roboto", sans-serif;
 }
 
-/*cards for small horizontal profiles*/
+/*cards for horizontal profiles in index*/
 .HorizontalCard {
   display: flex;
   flex-flow: row wrap;
   border: white 3px solid;
   margin: 1rem;
+  box-shadow: 2px 3px 5px black;
+
+  height: 100%;
+  /*animation*/
+  transition: all .2s ease-in-out;
 }
 .HorizontalCard .HorizontalCard-Img {
   border: white;
@@ -267,6 +287,13 @@ header nav ul li a {
   padding: 2em;
   flex-grow: 1;
 }
+
+/*adding animations */
+.HorizontalCard:hover{
+  transform: scale(1.03);
+  background-color: #a10a2f
+}
+
 /*Big cards For large profiles*/
 .VerticalCard {
   padding: 1rem;
