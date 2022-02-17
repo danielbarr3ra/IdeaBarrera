@@ -26,6 +26,7 @@
   text-shadow: -2px 0 black;
 }
 
+/*background colors*/
 .redBackground {
   background-color: #d84860;
 }
@@ -36,6 +37,42 @@
 .formColumnImg {
   background-image: url(../img/columnBanner.jpeg);
   background-size: cover;
+}
+
+.card {
+  border: none;
+  box-shadow: 5px 2px 2px black;
+}
+.mapCard {
+  background: white;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mapCard img {
+  background: white;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+nav ul li:hover {
+  background-color: gray;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* footer*/
+
+footer p:hover {
+  color: rgb(255, 78, 78);
+  transform: scale(1.03);
+}
+
+footer i:hover {
+  color: rgb(255, 78, 78);
+  transform: scale(1.13);
 }
 
 /*
