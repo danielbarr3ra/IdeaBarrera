@@ -18,14 +18,14 @@
 
 <body>
     <!--navigation bar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
           <img class="img-responsive companyLogo" src="./img/logo.png"  alt="">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav text-center">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
@@ -36,19 +36,123 @@
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="./pages/contactUs.html">Contact Us</a></li>
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="./pages/locations.html">Locations</a></li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
         </div>
       </nav>
-      <!--banner it is using jumbotron-->
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">Fluid jumbotron</h1>
-          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-        </div>
+      <!--using contianer fluid for banenr-->
+      <div class="contianer-fluid GridBanner">
+        <h1>Title of Page</h1>
+      </div>
+
+      <!--lets start using cards for the different areas-->
+      <!--inside each row we will add the cards or media content for each peroson item-->
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-lg-4 p-2 redBackground">
+                <h2 class = "text-white">Coaches</h2>
+                <!--cards-->
+                <div class="card mb-3 mx-auto text-white redBackground" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./img/coach.jpeg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card mb-3 mx-auto text-white redBackground" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./img/coach3.jpeg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card mb-3 mx-auto text-white redBackground" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./img/coach4.jpeg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+             </div>
+
+            <div class="col-lg-4 p-2 d-flex flex-column justify-content-around text-white blackBackground">
+                <h2 class = "text-white">Train With Us</h2>
+                <!--addding block of text-->
+                <div class="container">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus similique nihil temporibus, eos dolor consequuntur! Repellat fuga itaque mollitia blanditiis!</p>
+                </div>
+                <!--addding imebeded iframe using bootsrap-->
+                <div class="embed-responsive embed-responsive-16by9 pl-lg-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cyPLPEYVWZY?start=120" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                  </div>
+            </div>
+
+            <div class="col-lg-4 p-2 redBackground">
+                <h2 class = "text-white">Champions</h2>
+                <!--cards-->
+                <div class="card mb-3 mx-auto text-white redBackground" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./img/person4.jpeg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card mb-3 mx-auto text-white redBackground" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./img/person1.jpeg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card mb-3 mx-auto text-white redBackground" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./img/person2.jpeg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
       </div>
 
       <!-- Option 1: Bootstrap Bundle with Popper -->
