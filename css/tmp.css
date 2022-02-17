@@ -27,3 +27,8 @@
 .blackBackground {
   background-color: #303030;
 }
+
+.formColumnImg {
+  background-image: url(../img/columnBanner.jpeg);
+  background-size: cover;
+}
