@@ -3,7 +3,82 @@
   padding: 0;
   box-sizing: border-box;
 }
-/*these grids wwill be reused in other pages*/
+
+.companyLogo {
+  width: 130px;
+}
+.GridBanner {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  height: 8rem;
+  background-image: url(../img/gym.jpg);
+  background-position: 100% 70%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.GridBanner h1 {
+  font-size: 3rem;
+  margin: 0%;
+  color: #d84860;
+  text-shadow: -2px 0 black;
+}
+
+/*background colors*/
+.redBackground {
+  background-color: #d84860;
+}
+.blackBackground {
+  background-color: #303030;
+}
+
+.formColumnImg {
+  background-image: url(../img/columnBanner.jpeg);
+  background-size: cover;
+}
+
+.card {
+  border: none;
+  box-shadow: 5px 2px 2px black;
+}
+.mapCard {
+  background: white;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mapCard img {
+  background: white;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+nav ul li:hover {
+  background-color: gray;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* footer*/
+
+footer p:hover {
+  color: rgb(255, 78, 78);
+  transform: scale(1.03);
+}
+
+footer i:hover {
+  color: rgb(255, 78, 78);
+  transform: scale(1.13);
+}
+
+/*
+everything after this will be commented out, not needed
+
+/*these grids wwill be reused in other pages
 .ThreeColumnGrid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -40,7 +115,7 @@
     "footer footer footer footer footer footer";
 }
 
-/*Header will now occupy the header grid and use flex wrap to wrap the menu bar in case it changes to be responsive*/
+/*Header will now occupy the header grid and use flex wrap to wrap the menu bar in case it changes to be responsive
 header {
   grid-area: header;
   background-color: #303030;
@@ -56,7 +131,7 @@ header nav ul li {
   padding: 0.75rem;
   list-style-type: none;
 
-  /*adding animation*/
+  /*adding animation
   transition: all ease-in-out 0.3s;
 }
 
@@ -67,17 +142,18 @@ header nav ul li a {
   transition: all 0.3s ease-in-out;
 }
 
-header nav ul li:hover{
+header nav ul li:hover {
   background-color: white;
 }
 
-/*note to self if the hover happens in between the margins of  li and a it wont appli the transform of a, I should solve this by either making the margin tighter or also applying the animation there*/
+/*note to self if the hover happens in between the margins of  li and a it wont appli the transform of a, I should solve this by either making the margin tighter or also applying the animation there*
 
-header nav ul li a:hover{
+header nav ul li a:hover {
   color: #303030;
   font-size: x-large;
 }
-/*Banner almos the same but use flex in tital in case in the future it iwll come in handy*/
+/*Banner almos the same but use flex in tital in case in the future it iwll come in handy
+
 .GridBanner {
   grid-area: banner;
   display: flex;
@@ -99,7 +175,7 @@ header nav ul li a:hover{
   font-family: "Roboto", sans-serif;
 }
 
-/*Columns labeled, probably will make it more general in the future. In the future dont label them middle or right, just use the color, it will be more reausable*/
+/*Columns labeled, probably will make it more general in the future. In the future dont label them middle or right, just use the color, it will be more reausable
 .GridColumnLeft {
   grid-area: column1;
   display: flex;
@@ -146,12 +222,23 @@ header nav ul li a:hover{
   color: white;
 }
 
-/*adding key frames*/
-@keyframes  GridColumnMiddle-Text {
-  0% {top: 0%;}
-  33% {top: 25%; background: #c9657e;}
-  66% {top: 50%; background: #e03e59;}
-  100% {top: 25%; background: #c9657e;}
+/*adding key frames
+@keyframes GridColumnMiddle-Text {
+  0% {
+    top: 0%;
+  }
+  33% {
+    top: 25%;
+    background: #c9657e;
+  }
+  66% {
+    top: 50%;
+    background: #e03e59;
+  }
+  100% {
+    top: 25%;
+    background: #c9657e;
+  }
 }
 .GridColumnMiddle .GridColumnMiddle-Media {
   padding: 5em 0.25em 0.25em 0.25em;
@@ -207,7 +294,7 @@ header nav ul li a:hover{
   width: 100%;
   height: 100%;
 }
-/*Rows for the three grid template*/
+/*Rows for the three grid template
 .TopRow {
   grid-area: row1;
   background-color: #d81848;
@@ -266,7 +353,7 @@ header nav ul li a:hover{
   font-family: "Roboto", sans-serif;
 }
 
-/*cards for horizontal profiles in index*/
+/*cards for horizontal profiles in index
 .HorizontalCard {
   display: flex;
   flex-flow: row wrap;
@@ -275,8 +362,8 @@ header nav ul li a:hover{
   box-shadow: 2px 3px 5px black;
 
   height: 100%;
-  /*animation*/
-  transition: all .2s ease-in-out;
+  /*animation
+  transition: all 0.2s ease-in-out;
 }
 .HorizontalCard .HorizontalCard-Img {
   border: white;
@@ -297,13 +384,13 @@ header nav ul li a:hover{
   flex-grow: 1;
 }
 
-/*adding animations */
-.HorizontalCard:hover{
+/*adding animations 
+.HorizontalCard:hover {
   transform: scale(1.03);
-  background-color: #a10a2f
+  background-color: #a10a2f;
 }
 
-/*Big cards For large profiles*/
+/*Big cards For large profiles
 .VerticalCard {
   padding: 1rem;
   display: flex;
@@ -316,8 +403,8 @@ header nav ul li a:hover{
 .VerticalCard .VerticalCard-Img {
   border: #303030;
   width: 300px;
-  
-  transition: all .3s ease-in-out;
+
+  transition: all 0.3s ease-in-out;
 }
 .VerticalCard .VerticalCard-Img img {
   width: 100%;
@@ -336,7 +423,7 @@ header nav ul li a:hover{
   border-radius: 3rem;
   margin-top: 1rem;
 
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .VerticalCard .VerticalCard-Body h1 {
@@ -347,15 +434,15 @@ header nav ul li a:hover{
   list-style: none;
 }
 
-.VerticalCard .VerticalCard-Img :hover{
+.VerticalCard .VerticalCard-Img :hover {
   transform: scale(1.05);
 }
 
-.VerticalCard .VerticalCard-Body:hover{
+.VerticalCard .VerticalCard-Body:hover {
   transform: scale(1.05);
   color: #303030;
 }
-/*Event cards similar to horizontal might make them the same in the future*/
+/*Event cards similar to horizontal might make them the same in the future
 .eventCard {
   display: flex;
   flex-flow: row wrap;
@@ -384,7 +471,7 @@ header nav ul li a:hover{
   color: white;
 }
 
-/*plan card, this one is different becausee image has the text in it*/
+/*plan card, this one is different becausee image has the text in it
 
 .endurancePlanCard {
   height: 15em;
@@ -466,14 +553,13 @@ header nav ul li a:hover{
   white-space: normal;
 }
 
-
-.endurancePlanCard:hover{
+.endurancePlanCard:hover {
   transform: scale(1.1);
 }
-.weightPlanCard:hover{
+.weightPlanCard:hover {
   transform: scale(1.1);
 }
-.strengthPlanCard:hover{
+.strengthPlanCard:hover {
   transform: scale(1.1);
 }
 
@@ -506,7 +592,7 @@ header nav ul li a:hover{
   font-size: larger;
 }
 
-/*need to find a better way to reduce all the styliing here*/
+/*need to find a better way to reduce all the styliing here
 .biRowDown .largeHorizontalCard .largeHorizontalCard-Text p {
   color: black;
   font-family: "Roboto", sans-serif;
@@ -541,11 +627,11 @@ footer p {
   padding: 0;
 }
 
-footer p:hover{
+footer p:hover {
   color: rgb(255, 78, 78);
 }
 
-footer i:hover{
+footer i:hover {
   color: rgb(255, 78, 78);
 }
 
@@ -553,10 +639,10 @@ footer .footer-phone {
   padding-top: 1rem;
   text-align: center;
   padding-left: 3rem;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-footer .footer-phone:hover{
+footer .footer-phone:hover {
   transform: scale(1.1);
 }
 
@@ -564,10 +650,10 @@ footer .footer-adress {
   padding-top: 1rem;
   text-align: center;
   padding-left: 3rem;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-footer .footer-adress:hover{
+footer .footer-adress:hover {
   transform: scale(1.1);
 }
 
@@ -575,14 +661,14 @@ footer .footer-socialMedia {
   padding-top: 1rem;
   text-align: center;
   padding-left: 3rem;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
- footer .footer-socialMedia:hover{
+footer .footer-socialMedia:hover {
   transform: scale(1.1);
 }
 
-/*Adding hhe media query for tablet it should be allmost the same just for a few*/
+/*Adding hhe media query for tablet it should be allmost the same just for a few
 @media screen and (max-width: 768px) {
   .ThreeColumnGrid {
     display: grid;
@@ -597,7 +683,7 @@ footer .footer-socialMedia {
       "footer footer footer footer footer footer";
   }
 
-  /*the column bsided form should be horizontal immage no*/
+  /*the column bsided form should be horizontal immage no
   .GridColumnLeft .GridColumnLeft-Filler {
     width: 100%;
     height: 300px;
@@ -621,7 +707,7 @@ footer .footer-socialMedia {
     width: 0%;
     height: 9%;
   }
-  /*event card imgae too stretched out*/
+  /*event card imgae too stretched out
   .eventCard .eventCard-Img {
     width: 40%;
     height: 80%;
@@ -632,7 +718,7 @@ footer .footer-socialMedia {
     border-radius: 1rem;
     border: white 3px solid;
   }
-  /*the different categori card are too small*/
+  /*the different categori card are too small
   .PlanContainer {
     display: flex;
     flex-flow: column nowrap;
@@ -691,9 +777,9 @@ footer .footer-socialMedia {
   }
 }
 
-/*adding media queries for phone first it seems that I only need to change the grid layout*/
+/*adding media queries for phone first it seems that I only need to change the grid layout
 @media screen and (max-width: 320px) {
-  /*for mobile devices, pages with the three column grid will have to become rows */
+  /*for mobile devices, pages with the three column grid will have to become rows 
   .ThreeColumnGrid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -707,7 +793,7 @@ footer .footer-socialMedia {
       "footer footer footer footer footer footer";
   }
 
-  /*These cards will be vertical now*/
+  /*These cards will be vertical now
   .HorizontalCard {
     display: flex;
     flex-flow: column wrap;
@@ -741,7 +827,7 @@ footer .footer-socialMedia {
     text-align: center;
   }
 
-  /*the different categori card are too small*/
+  /*the different categori card are too small
   .PlanContainer {
     display: flex;
     flex-flow: column nowrap;
@@ -798,7 +884,7 @@ footer .footer-socialMedia {
     margin-top: 2rem;
     background-color: rgba(48, 12, 12, 0.5);
   }
-  /*smaller and cleanre for mobile*/
+  /*smaller and cleanre for mobile
   footer {
     grid-area: footer;
     display: flex;
@@ -829,3 +915,4 @@ footer .footer-socialMedia {
     padding: 0;
   }
 }
+*/
