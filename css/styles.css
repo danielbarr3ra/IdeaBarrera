@@ -42,7 +42,22 @@
 .card {
   border: none;
   box-shadow: 5px 2px 2px black;
+  /*adding more margin to avoid issues whtn transiton*/
+  margin: 2rem;
 }
+
+.flex-column h2{
+  text-align: center;
+}
+
+.col-lg-4 h2{
+  text-align: center;
+}
+
+.col-12 h3{
+  text-align: center;
+}
+
 .mapCard {
   background: white;
   margin-top: 2rem;
@@ -60,7 +75,33 @@ nav ul li:hover {
 }
 
 .card:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
+  background-color: #4d0b16;
+}
+.card{
+  transition-timing-function: linear;
+  transition: background-color 2s, scale 2s;
+}
+
+.coachCard:hover {
+  transform: scale(1.05);
+  background-color: #663a41 !important;
+}
+.coachCard{
+  transition-timing-function: linear;
+  transition: background-color 2s, scale 2s;
+}
+
+/*media query to decrease font size inside a card when it is too small*/
+
+
+@media (max-width:991.98px){
+  .eventText{
+    font-size: 0.75rem;
+  }
+  .eventTitle{
+    font-size: 1.25rem;
+  }
 }
 
 /* footer*/
