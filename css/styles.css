@@ -1,3 +1,14 @@
+@media (max-width:991.98px){
+  .eventText{
+    font-size: 0.75rem;
+  }
+  .eventTitle{
+    font-size: 1.25rem;
+  }
+}
+
+/*
+added to sass
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +18,7 @@
 .companyLogo {
   width: 130px;
 }
-/*
+
 added this with sacc
 .GridBanner {
   display: flex;
@@ -36,20 +47,22 @@ added this in the background css class
 .blackBackground {
   background-color: #303030;
 }
-*/
 
+added to sass
 .formColumnImg {
   background-image: url(../img/columnBanner.jpeg);
   background-size: cover;
 }
 
+added this with sass
 .card {
   border: none;
   box-shadow: 5px 2px 2px black;
-  /*adding more margin to avoid issues whtn transiton*/
+  /*adding more margin to avoid issues whtn transiton
   margin: 2rem;
 }
 
+added to sass
 .flex-column h2{
   text-align: center;
 }
@@ -74,14 +87,18 @@ added this in the background css class
   margin-bottom: 2rem;
 }
 
+added to sass
 nav ul li:hover {
   background-color: gray;
 }
 
+/*
 .card:hover {
   transform: scale(1.05);
   background-color: #4d0b16;
 }
+
+added to css
 .card{
   transition-timing-function: linear;
   transition: background-color 2s, scale 2s;
@@ -91,24 +108,17 @@ nav ul li:hover {
   transform: scale(1.05);
   background-color: #663a41 !important;
 }
+
+added to sass
 .coachCard{
   transition-timing-function: linear;
   transition: background-color 2s, scale 2s;
 }
 
-/*media query to decrease font size inside a card when it is too small*/
+media query to decrease font size inside a card when it is too small*/
 
 
-@media (max-width:991.98px){
-  .eventText{
-    font-size: 0.75rem;
-  }
-  .eventTitle{
-    font-size: 1.25rem;
-  }
-}
-
-/* footer*/
+/* footer
 
 footer p:hover {
   color: rgb(255, 78, 78);

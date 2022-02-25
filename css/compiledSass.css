@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.companyLogo {
+  width: 130px;
+}
+
+.GridBanner {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  height: 8rem;
+  background-image: url(../img/gym.jpg);
+  background-position: 100% 70%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.GridBanner h1 {
+  font-size: 3rem;
+  margin: 0%;
+  color: #d84860;
+  text-shadow: -2px 0 #303030;
+}
+
+.redBackground {
+  background-color: #d84860;
+}
+
+.blackBackground {
+  background-color: #303030;
+}
+
+nav ul li:hover {
+  background-color: gray;
+}
+
+.formColumnImg {
+  background-image: url(../img/columnBanner.jpeg);
+  background-size: cover;
+}
+
+.flex-column h2 {
+  text-align: center;
+}
+
+.col-lg-4 h2 {
+  text-align: center;
+}
+
+.col-12 h3 {
+  text-align: center;
+}
+
+.card {
+  border: none;
+  box-shadow: 5px 2px 2px #303030;
+  margin: 2rem;
+  transition-timing-function: linear;
+  transition: background-color 2s, scale 2s;
+}
+.card:hover {
+  transform: scale(1.05);
+  background-color: #4d0b16;
+}
+
+.mapCard {
+  background: white;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.mapCard img {
+  background: white;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.coachCard {
+  transition-timing-function: linear;
+  transition: background-color 2s, scale 2s;
+}
+.coachCard:hover {
+  transform: scale(1.05);
+  background-color: #663a41 !important;
+}
+
+footer p:hover {
+  color: #d84860;
+  transform: scale(1.03);
+}
+
+footer i:hover {
+  color: #d84860;
+  transform: scale(1.03);
+}
