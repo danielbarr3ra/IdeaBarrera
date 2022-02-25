@@ -1,0 +1,18 @@
+@use 'utilities' as c;
+footer{
+  p{
+    &:hover{
+      color: c.$red-color;
+      transform: scale(1.03);
+    }
+  }
+} 
+
+footer{
+  i{
+    &:hover{
+      color: c.$red-color;
+      transform: scale(1.03);
+    }
+  }
+} 
