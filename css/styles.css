@@ -7,6 +7,8 @@
 .companyLogo {
   width: 130px;
 }
+/*
+added this with sacc
 .GridBanner {
   display: flex;
   flex-flow: row wrap;
@@ -23,16 +25,18 @@
   font-size: 3rem;
   margin: 0%;
   color: #d84860;
-  text-shadow: -2px 0 black;
+  text-shadow: -2px 0 #303030;
 }
-
-/*background colors*/
+*/
+/*background colors
+added this in the background css class
 .redBackground {
   background-color: #d84860;
 }
 .blackBackground {
   background-color: #303030;
 }
+*/
 
 .formColumnImg {
   background-image: url(../img/columnBanner.jpeg);

@@ -1,0 +1,9 @@
+@use 'utilities' as c;
+
+.redBackground {
+    background-color: c.$red-color;
+}
+
+.blackBackground {
+    background-color: c.$black-color
+  }
