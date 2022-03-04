@@ -1,9 +1,8 @@
 @use 'utilities' as c;
 
 .redBackground {
-    background-color: c.$red-color;
-}
-
+    background-color: map-get($map: c.$colors, $key: coach-red)
+  }
 .blackBackground {
-    background-color: c.$black-color
+    background-color: map-get($map: c.$colors, $key: coach-black)
   }
