@@ -65,7 +65,7 @@ nav ul li:hover {
 }
 .card:hover {
   transform: scale(1.05);
-  background-color: #4d0b16;
+  background-color: #663a41 !important;
 }
 
 .mapCard {
