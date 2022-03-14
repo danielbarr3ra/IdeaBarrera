@@ -24,6 +24,15 @@
     }
 }
 
+/*added this to make the contrast better*/
+.card-img-overlay{
+    .eventTitle{
+        background-color:rgba(0, 0, 0, 0.445)
+    }
+    .eventText{
+        background-color:rgba(0, 0, 0, 0.445)
+    }
+}
 
 .mapCard {
     background: white;
