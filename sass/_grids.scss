@@ -3,7 +3,6 @@
 .GridBanner {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
     align-items: center;
     height: 8rem;
     background-image: url(../img/gym.jpg);
@@ -13,7 +12,6 @@
     background-size: cover;
     h1{
         font-size: 3rem;
-        margin: 0%;
         color: c.$red-color;
         text-shadow: -2px 0 c.$black-color;
     }

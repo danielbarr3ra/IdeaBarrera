@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .companyLogo {
@@ -11,7 +10,6 @@
 .GridBanner {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
   align-items: center;
   height: 8rem;
   background-image: url(../img/gym.jpg);
@@ -22,7 +20,6 @@
 }
 .GridBanner h1 {
   font-size: 3rem;
-  margin: 0%;
   color: #d84860;
   text-shadow: -2px 0 #303030;
 }
@@ -59,7 +56,8 @@ nav ul li:hover {
 .card {
   border: none;
   box-shadow: 5px 2px 2px #303030;
-  margin: 2rem;
+  margin: 1.75rem !important;
+  /*just to avoid card to over flow*/
   transition-timing-function: linear;
   transition: background-color 2s, scale 2s;
 }
@@ -88,11 +86,15 @@ nav ul li:hover {
   background-color: #663a41 !important;
 }
 
+footer .row {
+  width: 100%;
+  /*if not 100 then it will not take all the available space in flex*/
+  align-self: center !important;
+}
 footer p:hover {
   color: #d84860;
   transform: scale(1.03);
 }
-
 footer i:hover {
   color: #d84860;
   transform: scale(1.03);
