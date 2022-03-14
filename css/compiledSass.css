@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+/*change bootsrap font*/
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .companyLogo {
   width: 130px;
 }
