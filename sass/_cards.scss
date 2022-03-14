@@ -14,9 +14,16 @@
     margin: 1.75rem !important; /*just to avoid card to over flow*/
     transition-timing-function: linear;
     transition: background-color 2s, scale 2s;
-
-    @include hover
+    .event-image{
+        width: 100% !important;
+        height: 100% !important;
+    }
+    @include hover;
+    .card-body{
+        @include hover;
+    }
 }
+
 
 .mapCard {
     background: white;

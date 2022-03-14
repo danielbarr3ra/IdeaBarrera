@@ -1,7 +1,12 @@
-/*this is a custom media query since the default one was fixing it*/
+/*
+this is for quick debbuggin to see what is making the horizontal over
 *{
   outline: 1px solid yellow !important;
 }
+
+*/
+
+/*this is a custom media query since the default one was fixing it*/
 @media (max-width:991.98px){
   .eventText{
     font-size: 0.75rem;
