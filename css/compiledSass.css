@@ -73,9 +73,6 @@ nav ul li:hover {
 .card:hover {
   background-color: #663a41 !important;
 }
-.card .card-body:hover {
-  background-color: #663a41 !important;
-}
 
 /*added this to make the contrast better*/
 .card-img-overlay .eventTitle {

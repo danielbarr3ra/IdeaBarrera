@@ -19,9 +19,6 @@
         height: 100% !important;
     }
     @include hover;
-    .card-body{
-        @include hover;
-    }
 }
 
 /*added this to make the contrast better*/
