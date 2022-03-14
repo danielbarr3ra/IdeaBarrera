@@ -67,7 +67,6 @@ nav ul li:hover {
   transition: background-color 2s, scale 2s;
 }
 .card:hover {
-  transform: scale(1.05);
   background-color: #663a41 !important;
 }
 
@@ -86,8 +85,10 @@ nav ul li:hover {
   transition-timing-function: linear;
   transition: background-color 2s, scale 2s;
 }
+.coachCard .btn {
+  background-color: #ac1616 !important;
+}
 .coachCard:hover {
-  transform: scale(1.05);
   background-color: #663a41 !important;
 }
 

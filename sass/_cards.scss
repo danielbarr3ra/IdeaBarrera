@@ -2,7 +2,7 @@
 
 @mixin hover {
     &:hover {
-        transform: scale(1.05);
+       // transform: scale(1.05); /*removing this according to instructor it is distracting*/
         background-color: #663a41 !important;
     }
   }
@@ -34,5 +34,8 @@
 .coachCard{
     transition-timing-function: linear;
     transition: background-color 2s, scale 2s;
+    .btn{
+        background-color: rgb(172, 22, 22) !important;
+    }
     @include hover
   }
